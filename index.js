@@ -21,7 +21,7 @@ app.get("/", async (req, res) => {
             }
         })
             .then((resp) => {
-                res.contentType("txt").send(resp.data);
+                res.send(resp.data);
             })
             .catch((err) => {
 
